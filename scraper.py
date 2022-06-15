@@ -15,6 +15,5 @@ if response.status_code == 200:
     link_book = parsed.xpath(CATEGORY_LINK)
     book_name = parsed.xpath(CATEGORY_BOOK_NAME)
 
-    
-
-print(book_name.replace)
+libros = [name.replace("\n","").replace("  ","") for name in book_name]
+print(len(libros))
